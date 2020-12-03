@@ -15,7 +15,7 @@ func numberOfTrees(movements: (right: Int, down: Int)) -> Int {
     var movementsMade = movements
     
     while movementsMade.down < numOfRows {
-        if isTree(movements: (movementsMade.right, movementsMade.down)) {
+        if isTree(position: (movementsMade.right, movementsMade.down)) {
             numOfTrees += 1
         }
         
@@ -27,9 +27,11 @@ func numberOfTrees(movements: (right: Int, down: Int)) -> Int {
 }
 
 //MARK: - Other methods
-fileprivate func isTree(movements: (right: Int, down: Int)) -> Bool {
-    let row = input_day_3[movements.down]
-    let tree = characterAtIndex(string: row, index: movements.right % row.count)
+
+//Returns TRUE if, in the given coordinates, there's a tree
+fileprivate func isTree(position: (x: Int, y: Int)) -> Bool {
+    let row = input_day_3[position.y]
+    let tree = characterAtIndex(string: row, index: position.x % row.count)
     
     return tree == "#" ? true : false
 }
