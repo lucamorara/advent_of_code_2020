@@ -16,4 +16,4 @@ import Foundation
 //print(numberOfRightPasswords_2())
 
 //MARK: - Day 3
-print(numberOfTrees(movements: (3, 1)))
+print(numberOfTrees(movements: (7, 1)))

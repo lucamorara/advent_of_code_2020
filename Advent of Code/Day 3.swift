@@ -7,7 +7,7 @@
 
 import Foundation
 
-//MARK: - Part ONE
+//MARK: - Part ONE & TWO
 
 func numberOfTrees(movements: (right: Int, down: Int)) -> Int {
     var numOfTrees = 0
