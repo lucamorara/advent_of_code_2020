@@ -16,9 +16,9 @@ func numberOfRightPasswords() -> Int {
         let minMax = returnMinMax(String(components[0]))
         let character = String(components[1].first!)
         let string = String(components[2])
-        let numOfLetters = numberOfCharacters(character: character, in: string)
+        let numOfCharacters = numberOfCharacters(character: character, in: string)
         
-        if numOfLetters >= minMax.0 && numOfLetters <= minMax.1 {
+        if numOfCharacters >= minMax.0 && numOfCharacters <= minMax.1 {
             num += 1
         }
     }

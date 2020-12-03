@@ -12,5 +12,8 @@ import Foundation
 //print(findThreeNumbers() ?? "Numbers not found")
 
 //MARK: - Day 2
-print(numberOfRightPasswords())
-print(numberOfRightPasswords_2())
+//print(numberOfRightPasswords())
+//print(numberOfRightPasswords_2())
+
+//MARK: - Day 3
+print(numberOfTrees(movements: (3, 1)))
