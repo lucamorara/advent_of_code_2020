@@ -19,4 +19,7 @@ import Foundation
 //print(numberOfTrees(movements: (100000000, 1)))
 
 //MARK: - Day 4
-print(countValidPassports())
+//print(countValidPassports())
+
+//MARK: - Day 5
+print(checkHighestID())
