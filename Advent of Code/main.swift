@@ -22,4 +22,8 @@ import Foundation
 //print(countValidPassports())
 
 //MARK: - Day 5
-print(checkHighestID())
+//print(checkHighestID())
+
+//MARK: - Day 6
+print(sumCounts())
+print(sumCountsIndividuals())

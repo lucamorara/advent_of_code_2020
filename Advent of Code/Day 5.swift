@@ -28,6 +28,8 @@ func checkHighestID() -> Int {
     return list.sorted().last ?? -1
 }
 
+//MARK: - Other methods
+
 func decodeSeat(code: String) -> Int {
     let row = String(code.prefix(7))
     let column = String(code.suffix(3))

@@ -12,7 +12,7 @@ fileprivate let partOne = true
 //MARK: - Part ONE
 
 func countValidPassports() -> Int {
-    input_day_4 = input_day_4.replacingOccurrences(of: "", with: "\r")
+    input_day_4 = input_day_4.replacingOccurrences(of: "\r", with: "")
     let passportList = input_day_4.components(separatedBy: "\n\n")
     
     var number = 0
